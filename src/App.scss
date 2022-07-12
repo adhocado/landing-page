@@ -1,0 +1,82 @@
+@import "sassStyles/base";
+
+* {
+  font-family: $primary-font;
+  color: $primary-color;
+}
+
+.background-img {
+  position: fixed;
+  z-index: -1;
+  opacity: 45%;
+  width: 100%;
+  top: -50px;
+  left: 0;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.intro-section {
+  display: flex;
+  margin-left: $common-margin-left;
+  margin-right: $common-margin-left;
+
+  .intro-writeup {
+    max-width: 60%;
+    text-align: left;
+
+    > p {
+      font-size: 20px;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.scheduling-intro {
+  margin-left: $common-margin-left;
+  margin-right: $common-margin-left;
+
+  .scheduling-writeup {
+    font-size: 21px;
+  }
+}
+
+section {
+  margin-left: $common-margin-left;
+  margin-right: $common-margin-left;
+  &.team-members {
+    > p {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    > .member-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  &.story {
+    > p {
+      font-size: 20px;
+      line-height: 1.7em;
+      text-align: justify;
+    }
+  }
+}
+
+.spacer {
+  height: 24px;
+}

@@ -1,0 +1,10 @@
+@import "../../sassStyles/base";
+
+footer {
+  background-color: $bg-secondary-color;
+
+  .footer-content {
+    padding: 25px 0 25px 0;
+    margin-left: $common-margin-left;
+  }
+}

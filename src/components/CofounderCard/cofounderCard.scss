@@ -1,0 +1,16 @@
+@import "../../sassStyles/base";
+
+.cofounder-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+  h3 {
+    font-size: 32px;
+  }
+
+  p.title-text {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}

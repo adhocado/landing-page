@@ -1,0 +1,33 @@
+@import "../../sassStyles/base";
+
+.top-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: $common-margin-left;
+  margin-top: 25px;
+  margin-bottom: 24px;
+  margin-right: $common-margin-left;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: 700;
+  margin-right: 5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+
+  > li a {
+    margin: 4px;
+    padding: 10px;
+    font-weight: 700;
+    font-family: $primary-font;
+    font-size: 16px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}

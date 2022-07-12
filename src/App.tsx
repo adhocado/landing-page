@@ -4,15 +4,17 @@ import json from "../siteData.json";
 import CofounderCard from "./components/CofounderCard/CofounderCard";
 import backgroundImg from "./assets/background.webp";
 import mainImg from "./assets/main_graphic.webp";
-import { useRef } from "react";
+import React, { useRef } from "react";
 
 function App() {
-  const howItWorksRef = useRef(null);
-  const teamRef = useRef(null);
-  const aboutRef = useRef(null);
+  const howItWorksRef = useRef<HTMLDivElement>(null);
+  const teamRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
 
-  const executeScroll = (ref) => {
-    ref.current.scrollIntoView();
+  const executeScroll = (ref: React.RefObject<HTMLElement>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView();
+    }
   };
 
   return (

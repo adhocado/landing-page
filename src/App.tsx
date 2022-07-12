@@ -1,7 +1,6 @@
 import "./App.scss";
-import { FeatureJumbotron, Footer, Header } from "./components";
+import { CofounderCard, FeatureJumbotron, Footer, Header } from "./components";
 import json from "../siteData.json";
-import CofounderCard from "./components/CofounderCard/CofounderCard";
 import backgroundImg from "./assets/background.webp";
 import mainImg from "./assets/main_graphic.webp";
 import React, { useRef } from "react";

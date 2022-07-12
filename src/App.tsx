@@ -1,5 +1,11 @@
 import "./App.scss";
-import { CofounderCard, FeatureJumbotron, Footer, Header } from "./components";
+import {
+  CofounderCard,
+  FeatureInfoCard,
+  FeatureJumbotron,
+  Footer,
+  Header,
+} from "./components";
 import json from "../siteData.json";
 import backgroundImg from "./assets/background.webp";
 import mainImg from "./assets/main_graphic.webp";
@@ -42,11 +48,26 @@ function App() {
         </div>
         <div className="spacer" />
         <div className="scheduling-intro">
-          <h3>Scheduling Simplified.</h3>
-          <span className="scheduling-writeup">
-            Adhocado provides you with the easiest and most efficient way to
-            discover common free times within your group of friends.
-          </span>
+          <div>
+            <h3>Scheduling Simplified.</h3>
+            <span className="scheduling-writeup">
+              Adhocado provides you with the easiest and most efficient way to
+              discover common free times within your group of friends.
+            </span>
+          </div>
+          <FeatureInfoCard
+            title="Automatic Integration"
+            description="Import your personal calendars when creating future get-togethers so that they don’t clash with existing ones. These get-togethers will then be synced back to your personal calendars automatically. Voila."
+          />
+
+          <FeatureInfoCard
+            title="Community Groups"
+            description="Directly create or join a group through an invitation code! Facilitate effective planning among your friends through community groups that keep track of upcoming, pending, and past events."
+          />
+          <FeatureInfoCard
+            title="Group Calendar"
+            description="With a group calendar that allows friends to find common timeslots to meet, schedule get-togethers easily and be notified when D-day approaches!​"
+          />
         </div>
 
         <div ref={howItWorksRef}>
@@ -80,6 +101,7 @@ function App() {
             us, we never stop for you.
           </p>
         </section>
+        <div className="spacer" />
       </main>
       <Footer />
     </div>

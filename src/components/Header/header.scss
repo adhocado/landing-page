@@ -1,5 +1,9 @@
 @import "../../sassStyles/base";
 
+header {
+  background-color: rgba($color: #ffffff, $alpha: 0.4);
+}
+
 .top-navbar {
   display: flex;
   flex-direction: row;

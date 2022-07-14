@@ -9,7 +9,7 @@ const FeatureInfoCard = ({ title, description }: FeatureInfoCardProps) => {
   return (
     <div className="info-card">
       <span className="card-title">{title}</span>
-      <span className="card-description">{description}</span>
+      <p className="card-description">{description}</p>
     </div>
   );
 };

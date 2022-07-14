@@ -18,7 +18,7 @@ function App() {
 
   const executeScroll = (ref: React.RefObject<HTMLElement>) => {
     if (ref.current) {
-      ref.current.scrollIntoView();
+      ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 

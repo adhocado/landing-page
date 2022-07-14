@@ -19,6 +19,7 @@
   .mockup-container {
     display: flex;
     justify-content: space-evenly;
+    padding: 0 40px;
 
     // display: grid;
     // grid-template-rows: repeat(3, min-content) 1fr;
@@ -28,6 +29,7 @@
     .action-cards {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
   }
 }

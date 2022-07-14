@@ -1,10 +1,17 @@
 @import "../../sassStyles/base";
 
 .action-card {
-  background-color: #ffffffd9;
+  background-color: #ffffff80;
   padding: 25px;
   margin: 0 40px 40px;
   max-width: 522px;
+  flex: 1;
+  cursor: pointer;
+
+  &.selected {
+    cursor: default;
+    background-color: #ffffffd9;
+  }
 
   .card-title {
     font-size: 20px;
@@ -12,6 +19,11 @@
     font-weight: bold;
     line-height: 2rem;
     font-family: $secondary-font;
+    margin-bottom: 0.5rem;
+
+    &:not(.selected) {
+      color: #c7c7c7;
+    }
   }
 
   font-size: 18px;

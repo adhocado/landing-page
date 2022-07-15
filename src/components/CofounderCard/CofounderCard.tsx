@@ -1,3 +1,4 @@
+import React from "react";
 import "./cofounderCard.scss";
 import femaleProfile from "../../assets/profile_1.webp";
 import maleProfile1 from "../../assets/profile_2.webp";
@@ -14,6 +15,8 @@ interface CofounderProps {
 }
 
 const CofounderCard = ({ cofounder }: CofounderProps) => {
+  const [isHover, setIsHover] = React.useState(false);
+
   const getProfilePic = (profile: string) => {
     if (profile === "female1") {
       return femaleProfile;
@@ -25,7 +28,15 @@ const CofounderCard = ({ cofounder }: CofounderProps) => {
   };
 
   return (
-    <div className="cofounder-card">
+    <div
+      className="cofounder-card"
+      onMouseEnter={(e) => {
+        setIsHover(true);
+      }}
+      onMouseLeave={(e) => {
+        setIsHover(false);
+      }}
+    >
       <h3>{cofounder.name}</h3>
       <p className="title-text">{cofounder.title}</p>
       <img
@@ -33,6 +44,12 @@ const CofounderCard = ({ cofounder }: CofounderProps) => {
         height="209px"
         src={getProfilePic(cofounder.profile_pic)}
       />
+      <div className={`detail-card ${isHover && "hovered"}`}>
+        {cofounder.role}
+        <br />
+        <br />
+        {cofounder.email}
+      </div>
     </div>
   );
 };

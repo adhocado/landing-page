@@ -26,6 +26,23 @@
     // grid-template-columns: 100%;
     // grid-area: 1 / 1 / 5 / 2;
 
+    .demo-screen-container {
+      width: 300px;
+      position: relative;
+
+      img.mockup {
+        position: absolute;
+      }
+
+      img.screen {
+        z-index: 1;
+        left: 20px;
+        top: 15px;
+        border-radius: 20px;
+        position: absolute;
+      }
+    }
+
     .action-cards {
       display: flex;
       flex-direction: column;

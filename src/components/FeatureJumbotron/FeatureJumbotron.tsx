@@ -4,6 +4,7 @@ import FeatureActionCard from "../FeatureActionCard/FeatureActionCard";
 import autoIntegrationImg from "../../assets/calendar_integration.jpeg";
 import communityGroupsImg from "../../assets/community_groups.jpeg";
 import groupCalendarImg from "../../assets/suggest_times.jpeg";
+import mockup from "../../assets/demo_mockup.webp";
 import { useState } from "react";
 
 const FeatureJumbotron = () => {
@@ -27,7 +28,16 @@ const FeatureJumbotron = () => {
           on the market compromise on either one. Adhocado has it all.
         </h4>
         <div className="mockup-container">
-          <img width="250px" src={getCurrentImg(currentImg)} />
+          <div className="demo-screen-container">
+            <img className="mockup" src={mockup} />
+            <img
+              className="screen"
+              width="240px"
+              height="524px"
+              src={getCurrentImg(currentImg)}
+            />
+          </div>
+
           <div className="action-cards">
             <FeatureActionCard
               title="Automatic Integration"

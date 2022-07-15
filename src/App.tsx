@@ -42,7 +42,7 @@ function App() {
               <br /> Take a breather. We are here to help.
             </p>
           </div>
-          <div>
+          <div className="main-img">
             <img src={mainImg} />
           </div>
         </div>

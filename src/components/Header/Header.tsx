@@ -1,11 +1,12 @@
 import "./header.scss";
+import logo from "../../assets/logo.webp";
 
 const Header = ({ howItWorksScroll, teamScroll, aboutScroll }: any) => {
   return (
     <header>
       <div className="top-navbar">
         <div className="logo">
-          <a>adhocado</a>
+          <img src={logo} />
         </div>
         <nav>
           <ul>

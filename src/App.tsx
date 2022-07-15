@@ -57,16 +57,19 @@ function App() {
           </div>
           <FeatureInfoCard
             title="Automatic Integration"
-            description="Import your personal calendars when creating future get-togethers so that they don’t clash with existing ones. These get-togethers will then be synced back to your personal calendars automatically. Voila."
+            description="Import your personal calendars when creating future get-togethers so that they don’t clash with existing ones. These get-togethers will then be synced back to your personal calendars automatically."
+            iconName="integration"
           />
 
           <FeatureInfoCard
             title="Community Groups"
             description="Directly create or join a group through an invitation code! Facilitate effective planning among your friends through community groups that keep track of upcoming, pending, and past events."
+            iconName="avatar"
           />
           <FeatureInfoCard
             title="Group Calendar"
             description="With a group calendar that allows friends to find common timeslots to meet, schedule get-togethers easily and be notified when D-day approaches!​"
+            iconName="calendar"
           />
         </div>
 

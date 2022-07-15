@@ -3,8 +3,13 @@
 footer {
   background-color: $bg-secondary-color;
 
-  .footer-content {
-    padding: 25px 0 25px 0;
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    padding: 14px 0 25px 0;
     margin-left: $common-margin-left;
+    margin-right: $common-margin-left;
+    align-items: center;
+    gap: 3rem;
   }
 }
